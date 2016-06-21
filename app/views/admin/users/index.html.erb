@@ -1,0 +1,7 @@
+<h1>This is the index of admin/users!</h1>
+
+<% @users.each do |user| %>
+<li><%= user.full_name %></li>
+<li><%= user.email %></li>
+<br>
+<% end%>

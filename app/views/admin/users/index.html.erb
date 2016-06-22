@@ -1,7 +1,12 @@
-<h1>This is the index of admin/users!</h1>
+<h1>Administrators Control Page</h1>
 
+<%= link_to "Create a new user",new_admin_user_path, action: :new %>
 <% @users.each do |user| %>
-<li><%= user.full_name %></li>
 <li><%= user.email %></li>
-<br>
+<li><%= user.created_at %></li>
+<li><%= user.admin.to_s %></li>
+<%= link_to "Delete User", admin_user_path(user), method: :delete %>
+<%= link_to "Update User", edit_admin_user_path(user)  %>
+
+<hb>
 <% end%>

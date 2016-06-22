@@ -48,3 +48,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'carrierwave'
 # Image Resizing Gem
 gem 'mini_magick'
+
+gem 'pry-byebug'
+gem 'pry'

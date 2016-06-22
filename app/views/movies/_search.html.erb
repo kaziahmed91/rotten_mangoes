@@ -1,0 +1,25 @@
+<%= form_tag('movies/search', method:"get") do %>
+  <div>
+    <%= label_tag(:title, "Search by Movies:") %><br>
+    <%= search_field_tag(:title) %><br>
+  </div>
+
+  <div>
+    <%= label_tag(:director, "Search by Director") %><br>
+    <%= search_field_tag(:director) %><br>
+  </div>
+
+  <div>
+  <%= label_tag(:length, "Search by Duration") %><br>
+  <select name="length">
+    <option value=""></option>
+    <option value="1">Shorter than 90 mintues</option>
+    <option value="2">Between 90 and 180 minutes</option>
+    <option value="3">Longer than 180 minutes</option>
+  </select>
+  </div>
+
+  <div>
+    <%= submit_tag("Search") %>
+  </div>
+<% end %>

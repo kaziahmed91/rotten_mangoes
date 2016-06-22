@@ -30,6 +30,22 @@ class Movie < ActiveRecord::Base
     end
   end
 
+  def self.movie_duration
+    # shorter_than_90 = Movie.where('runtime_in_minutes <= 90')
+    # between_90_and_180 = Movie.where(')
+    # longer_than_180 = Movie.where('runtime_in_minutes >= 180')
+    # # case params[:length]
+    # # when 1
+    # #   then @movie.where
+    # # when 2
+    # #   then @movie && Movie.runtime_in_minutes > 180
+    # # when 3
+    # #   then @movie && (Movie.runtime_in_minutes >= 90 && Movie.runtime_in_minutes <= 180)
+    # # end
+  end
+
+
+
   protected
 
   def release_date_is_in_the_past
